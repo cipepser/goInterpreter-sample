@@ -82,7 +82,7 @@ let result = add(five, ten);
 		{token.INT, "5"},
 		{token.LT, "<"},
 		{token.INT, "10"},
-		{token.GT, "<"},
+		{token.GT, ">"},
 		{token.INT, "5"},
 		{token.SEMICOLON, ";"},
 		{token.EOF, ""},
