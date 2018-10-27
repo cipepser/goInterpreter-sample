@@ -52,12 +52,12 @@ func (i *Identifier) TokenLiteral() string {
 }
 
 type ReturnStatement struct {
-	token       token.Token
+	Token       token.Token
 	ReturnValue Expression
 }
 
 func (rs *ReturnStatement) TokenLiteral() string {
-	return rs.token.Literal
+	return rs.Token.Literal
 }
 
 func (rs *ReturnStatement) statementNode() {}
