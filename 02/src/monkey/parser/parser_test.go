@@ -140,7 +140,7 @@ func TestIdentifierExpression(t *testing.T) {
 
 }
 
-func TestIntergerLiteralExpression(t *testing.T) {
+func TestIntegerLiteralExpression(t *testing.T) {
 	input := "5;"
 
 	l := lexer.New(input)
