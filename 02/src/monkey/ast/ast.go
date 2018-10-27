@@ -2,7 +2,6 @@ package ast
 
 import (
 	"bytes"
-
 	"github.com/cipepser/goInterpreter-sample/02/src/monkey/token"
 )
 
@@ -152,6 +151,10 @@ type PrefixExpression struct {
 }
 
 func (pe *PrefixExpression) TokenLiteral() string {
+	return pe.Token.Literal
+}
+
+func (pe *PrefixExpression) String() string {
 	var out bytes.Buffer
 
 	out.WriteString("(")
@@ -162,8 +165,29 @@ func (pe *PrefixExpression) TokenLiteral() string {
 	return out.String()
 }
 
-func (pe *PrefixExpression) String() string {
-	return pe.Token.Literal
+func (pe *PrefixExpression) expressionNode() {}
+
+type InfixExpression struct {
+	Token    token.Token // infix token. ex) "+"
+	Left     Expression
+	Operator string
+	Right    Expression
 }
 
-func (pe *PrefixExpression) expressionNode() {}
+func (oe *InfixExpression) TokenLiteral() string {
+	return oe.Token.Literal
+}
+
+func (oe *InfixExpression) String() string {
+	var out bytes.Buffer
+
+	out.WriteString("(")
+	out.WriteString(oe.Left.String())
+	out.WriteString(" " + oe.Operator + " ")
+	out.WriteString(oe.Right.String())
+	out.WriteString(")")
+
+	return out.String()
+}
+
+func (oe *InfixExpression) expressionNode() {}
