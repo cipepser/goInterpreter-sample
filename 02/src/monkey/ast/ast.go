@@ -2,6 +2,7 @@ package ast
 
 import (
 	"bytes"
+
 	"github.com/cipepser/goInterpreter-sample/02/src/monkey/token"
 )
 
@@ -191,3 +192,18 @@ func (oe *InfixExpression) String() string {
 }
 
 func (oe *InfixExpression) expressionNode() {}
+
+type Boolean struct {
+	Token token.Token
+	Value bool
+}
+
+func (b *Boolean) TokenLiteral() string {
+	return b.Token.Literal
+}
+
+func (b *Boolean) String() string {
+	return b.Token.Literal
+}
+
+func (b *Boolean) expressionNode() {}
