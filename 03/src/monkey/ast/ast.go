@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"strings"
 
-	"github.com/cipepser/goInterpreter-sample/02/src/monkey/token"
+	"github.com/cipepser/goInterpreter-sample/03/src/monkey/token"
 )
 
 type Node interface {

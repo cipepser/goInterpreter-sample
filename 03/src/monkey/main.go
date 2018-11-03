@@ -5,7 +5,7 @@ import (
 	"os"
 	"os/user"
 
-	"github.com/cipepser/goInterpreter-sample/02/src/monkey/repl"
+	"github.com/cipepser/goInterpreter-sample/03/src/monkey/repl"
 )
 
 func main() {

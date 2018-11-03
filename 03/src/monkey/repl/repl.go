@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/cipepser/goInterpreter-sample/02/src/monkey/parser"
+	"github.com/cipepser/goInterpreter-sample/03/src/monkey/parser"
 
-	"github.com/cipepser/goInterpreter-sample/02/src/monkey/lexer"
+	"github.com/cipepser/goInterpreter-sample/03/src/monkey/lexer"
 )
 
 const PROMPT = ">> "
