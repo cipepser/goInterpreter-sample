@@ -3,8 +3,8 @@ package evaluator
 import (
 	"fmt"
 
-	"github.com/cipepser/goInterpreter-sample/04/src/monkey/ast"
-	"github.com/cipepser/goInterpreter-sample/04/src/monkey/object"
+	"github.com/cipepser/goInterpreter-sample/appendix/src/monkey/ast"
+	"github.com/cipepser/goInterpreter-sample/appendix/src/monkey/object"
 )
 
 var (

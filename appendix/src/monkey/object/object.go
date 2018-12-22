@@ -6,7 +6,7 @@ import (
 	"hash/fnv"
 	"strings"
 
-	"github.com/cipepser/goInterpreter-sample/04/src/monkey/ast"
+	"github.com/cipepser/goInterpreter-sample/appendix/src/monkey/ast"
 )
 
 const (

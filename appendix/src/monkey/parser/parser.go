@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/cipepser/goInterpreter-sample/04/src/monkey/ast"
-	"github.com/cipepser/goInterpreter-sample/04/src/monkey/lexer"
-	"github.com/cipepser/goInterpreter-sample/04/src/monkey/token"
+	"github.com/cipepser/goInterpreter-sample/appendix/src/monkey/ast"
+	"github.com/cipepser/goInterpreter-sample/appendix/src/monkey/lexer"
+	"github.com/cipepser/goInterpreter-sample/appendix/src/monkey/token"
 )
 
 const (

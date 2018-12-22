@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/cipepser/goInterpreter-sample/04/src/monkey/ast"
+	"github.com/cipepser/goInterpreter-sample/appendix/src/monkey/ast"
 
-	"github.com/cipepser/goInterpreter-sample/04/src/monkey/lexer"
+	"github.com/cipepser/goInterpreter-sample/appendix/src/monkey/lexer"
 )
 
 func TestLetStatements(t *testing.T) {
