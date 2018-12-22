@@ -265,6 +265,10 @@ func TestErrorHandling(t *testing.T) {
 			`{"name": "Monkey"}[fn(x) { x }];`,
 			"unusable as hash key: FUNCTION",
 		},
+		{
+			`999[1]`,
+			"index operator not supported: INTEGER",
+		},
 	}
 
 	for _, tt := range tests {
